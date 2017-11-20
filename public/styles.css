@@ -1,0 +1,37 @@
+.evil{
+  background-color: red;
+}
+
+.good{
+  background-color:blue;
+}
+
+.insanity1{
+  opacity: 1;
+}
+.insanity2{
+  opacity: .8;
+}
+.insanity3{
+opacity: .6;
+}
+.insanity4{
+  opacity: .4;
+
+}
+.insanity5{
+  opacity: .2;
+}
+
+
+.fav-color-green{
+  border: 10px green solid;
+}
+
+.fav-color-yellow{
+  border: 10px yellow solid;
+}
+
+.fav-color-blue{
+  border: 10px blue solid;
+}

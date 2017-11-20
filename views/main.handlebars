@@ -9,14 +9,14 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
 
 <body>
-  <div class="form-group">
 
-<div class="form-group">
+  <div class="form-group {{#if favColor}} fav-color-{{favColor}} {{/if}}">
+
+  <div class="form-group">
 
     <form action="/" method="post">
       <div class="radio">
@@ -26,21 +26,27 @@
         <label><input type="radio" value="evil" name="good-evil">Evil</label>
       </div>
       <div>
-        <label>Favorite Food<input type="text" name="favFood"></label>
+        <label>Favorite Food<input type="text" name="favFood" placeholder="{{favFood}}"></label>
       </div>
       <div class="form-drop">
         <label>Select Color</label>
         <select class="form-control" id="favColor" name="favColor">
-          <option>Red</option>
-          <option>Green</option>
-          <option>Blue</option>
+          <option>blue</option>
+          <option>green</option>
+          <option>yellow</option>
         </select>
       </div>
       <div>
-        <input class="slider" id="insanity" data-slider-id='insanity-slider' type="text" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="5" name="insanity"/>
+        <label>Insanity</label><input class="slider" id="insanity" data-slider-id='insanity-slider' type="text" data-slider-min="1" data-slider-max="5" data-slider-step="1" data-slider-value="5" name="insanity"/>
       </div>
       <input type="submit">
     </form>
-  </div>
+    </div>
+    <div>
+      {{#if resume}}
+      <h1>RESUME</h1>
+      <h1>{{resume}}</h1>
+      {{/if}}
+    </div>
 
 

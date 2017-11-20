@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/SamuelLangenfeld/assignment_css_garden_of_good_and_evil#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "bootstrap": "^3.3.7",
     "bootstrap-slider": "^10.0.0",
     "cookie-parser": "^1.4.3",

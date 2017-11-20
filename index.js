@@ -52,6 +52,38 @@ if (req.session.visited) {
 
   params.resume = resumes[req.cookies.insanity];
 
+  let likes =["puppies", "rainbows", "unicorns"];
+  if (req.cookies.favColor){
+    likes.push(req.cookies.favColor);
+  }
+  if (req.cookies.favFood){
+    likes.push(req.cookies.favFood);
+  }
+  let dislikes = ["TATTOOS (hint hint)", "Brakes", "Spiders"];
+
+  if (Number(req.cookies.insanity) > 3){
+    likes.push("Repetition");
+  }
+
+  insanityLevel = Number(req.cookies.insanity);
+  for (let i=insanityLevel-1; i>0; i--){
+    likes.push("Repetition");
+  };
+
+  params["likes"] = likes;
+  params["dislikes"] = dislikes;
+
+
+  let biography={
+    1:"Grew up, got married, had kids, died",
+    2:"Grew up, went to India, went to Africa, got married at 50.",
+    3:"Grew up, went to Vegas, blew all his money on blackjack and died penniless",
+    4:"Never grew up, became a Lost Boy, fought Captain Hook to the death",
+    5:"Spent $2000 on an online bootcamp run by people he never met in his life and spent 10 hours a day coding a room talking to people who aren't there"
+  }
+
+  params["biography"] = biography[insanityLevel];
+
 
   console.log(params)
   res.render('main', params)

@@ -31,7 +31,7 @@
       <div class="form-drop">
         <label>Select Color</label>
         <select class="form-control" id="favColor" name="favColor">
-          <option>blue</option>
+          <option>orange</option>
           <option>green</option>
           <option>yellow</option>
         </select>
@@ -48,5 +48,32 @@
       <h1>{{resume}}</h1>
       {{/if}}
     </div>
+
+
+    {{#if likes}}
+      <div class="row">
+      <div class="col-md-6">
+      <h2>LIKES</h2>
+    
+
+    {{#each likes as |like|}}
+    <div>{{like}}</div>
+    {{/each}}
+
+    </div>
+    <div class="col-md-6">
+    <h2>DISLIKES</h2>
+    {{#each dislikes as |dislike|}}
+    <div>{{dislike}}</div>
+   
+    {{/each}}
+     </div>
+     </div>
+    {{/if}}
+
+    {{#if biography}}
+    <h1>BIOGRAPHY</h1>
+    <h2>{{biography}}</h2>
+    {{/if}}
 
 

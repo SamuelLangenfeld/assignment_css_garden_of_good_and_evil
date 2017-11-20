@@ -3,7 +3,7 @@
 }
 
 .good{
-  background-color:blue;
+  background-color:#66d9ff;
 }
 
 .insanity1{
@@ -32,6 +32,6 @@ opacity: .6;
   border: 10px yellow solid;
 }
 
-.fav-color-blue{
-  border: 10px blue solid;
+.fav-color-orange{
+  border: 10px orange solid;
 }

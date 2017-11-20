@@ -45,8 +45,10 @@
     <div>
       {{#if resume}}
       <h1>RESUME</h1>
-      <h1>{{resume}}</h1>
       {{/if}}
+      {{#each resume as |resume|}}
+      <h1>{{resume}}</h1>
+      {{/each}}
     </div>
 
 

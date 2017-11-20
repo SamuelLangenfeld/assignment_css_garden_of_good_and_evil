@@ -1,37 +1,40 @@
-.evil{
-  background-color: red;
+.evil {
+  background-color: #ff1a1a;
 }
 
-.good{
-  background-color:#66d9ff;
+.good {
+  background-color: #66d9ff;
 }
 
-.insanity1{
+.insanity1 {
   opacity: 1;
 }
-.insanity2{
+
+.insanity2 {
   opacity: .8;
 }
-.insanity3{
-opacity: .6;
-}
-.insanity4{
-  opacity: .4;
 
+.insanity3 {
+  opacity: .6;
 }
-.insanity5{
+
+.insanity4 {
+  opacity: .4;
+}
+
+.insanity5 {
   opacity: .2;
 }
 
 
-.fav-color-green{
+.fav-color-green {
   border: 10px green solid;
 }
 
-.fav-color-yellow{
+.fav-color-yellow {
   border: 10px yellow solid;
 }
 
-.fav-color-orange{
+.fav-color-orange {
   border: 10px orange solid;
 }

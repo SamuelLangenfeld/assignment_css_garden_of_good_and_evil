@@ -25,7 +25,8 @@ app.use(cookieParser());
 
 app.get('/', (req,res) => {
 if (req.session.visited) {
-  res.render('main', params)
+
+  res.render('main', {})
 } else {
 
   req.session.visited = true;
